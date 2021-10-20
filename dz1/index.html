@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>  
+
+    <!-- Bootstrap core CSS -->
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="static/css/my.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <div class="col-5">
+            <a class="navbar-brand" href="#">Ask musician</a>
+        </div>
+        <div class="col-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Ask</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="img-wrap">
+            <img id="image-fluid" src="static/img/coi.jpg" alt="">
+            </div>   
+            <div class="wrap">
+            <h6 class="nickname">Victor Tsoi</h6>
+            <a id="settings" href="#">settings</a>
+            <a id="log-out" href="#">log out</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="row">
+        <div class="col-9">
+            <h2 class="question-header">Questions</h2>
+            <div class="row question">
+                <div class="col-2">
+                    <p class="image-center">
+                        <img class="img" src="static/img/coi.jpg" alt="">
+                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="rating-table">99</div>
+                            <div id="dislikes" class="rating-table">1</div>
+                        </div>
+                        <div class="col-8">
+                        <button id="like-button" class="button">like</button>
+                        <button id="dislike-button" class="button">dislike</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <h2><a class="question-name" href="#">How to make a greate music?</a></h2>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="row">
+                        <div class="col-5"><a class="answers" href="#">answers (3)</a></div>
+                        <div class="col-7"><p class="answer-tags">Tags: <a href="#">rock</a> <a href="#">postpunk</a></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-2">
+                    <p class="image-center">
+                        <img class="img" src="static/img/coi.jpg" alt="">
+                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="rating-table">5</div>
+                            <div id="dislikes" class="rating-table">5</div>
+                        </div>
+                        <div class="col-8">
+                        <button id="like-button" class="button">like</button>
+                        <button id="dislike-button" class="button">dislike</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <h2><a class="question-name" href="#">How to make a greate music?</a></h2>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="row">
+                        <div class="col-5"><a class="answers" href="#">answers (3)</a></div>
+                        <div class="col-7"><p class="answer-tags">Tags: <a href="#">rock</a> <a href="#">postpunk</a></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-2">
+                    <p class="image-center">
+                        <img class="img" src="static/img/coi.jpg" alt="">
+                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="rating-table">5</div>
+                            <div id="dislikes" class="rating-table">5</div>
+                        </div>
+                        <div class="col-8">
+                        <button id="like-button" class="button">like</button>
+                        <button id="dislike-button" class="button">dislike</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <h2><a class="question-name" href="#">How to make a greate music?</a></h2>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="row">
+                        <div class="col-5"><a class="answers" href="#">answers (3)</a></div>
+                        <div class="col-7"><p class="answer-tags">Tags: <a href="#">rock</a> <a href="#">postpunk</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <h2>Populat tags</h2>
+                <big><a class="color-red" href="#">Kino</a></big> 
+                <small><a class="color-green" href="#">Zvezda po imeni solnce</a></small> 
+                <a class="color-blueviolet" href="#"></a>
+                <br>
+                <a class="color-blueviolet" href="#">Tsoi</a> 
+                <big><a class="color-red" href="#">rok</a></big> 
+                <a class="color-green" href="#">russian rock</a>
+                <br>
+                <small><a class="color-green" href="#">postpunk</a></small> 
+                <a class="color-blueviolet" href="#">new wave</a> 
+                <big><a class="color-red" href="#">Poslednii geroi</a></big>
+                <br><br>
+                <h2>Best members</h2>
+                <a href="#">Victor Tsoi</a><br>
+                <a href="#">Aleksey Ribin</a><br>
+                <a href="#">Oleg Valinskyi</a><br>
+                <a href="#">Aleksandr Titov</a>
+        </div>
+    </div>
+    <div class="center">
+    <button class="button">1</button><button class="button">2</button>
+    <button class="button">3</button><button class="button">...</button>
+    <button class="button">82</button>
+    </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
