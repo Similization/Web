@@ -1,0 +1,6 @@
+*__pycache__/
+node_modules/
+venv/
+*js/
+db.sqlite3
+vs_code/

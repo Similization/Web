@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="row question">
+    <div class="col-2">
+        <p class="image-center">
+            <img class="img" src="{% static "img/coi.jpg" %}" alt="">
+        </p>
+        <div class="row">
+            <div class="col-4">
+                <div class="rating-table">5</div>
+                <div id="dislikes" class="rating-table">5</div>
+            </div>
+            <div class="col-8">
+                <button id="like-button" class="button">like</button>
+                <button id="dislike-button" class="button">dislike</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-10">
+        <div class="question-header">
+            <h2><a href="#">{{ question.title }}</a></h2>
+            {{ question.text }}
+        </div>
+        <div class="row">
+            <div class="col-5"><a class="answers" href="#">answers (3)</a></div>
+            <div class="col-7"><p class="answer-tags">Tags: <a href="{% url "tag" %}">rock</a> <a href="#">postpunk</a></p></div>
+        </div>
+    </div>
+</div>

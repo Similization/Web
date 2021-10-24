@@ -1,0 +1,55 @@
+{% comment %} <div class="pagination">
+    <span class="step-links">
+        {% if questions.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ questions.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ questions.number }} of {{ questions.paginator.num_pages }}.
+        </span>
+
+        {% if questions.has_next %}
+            <a href="?page={{ questions.next_page_number }}">next</a>
+            <a href="?page={{ questions.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div> {% endcomment %}
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+
+    {% if questions.has_previous %}
+    <li class="page-item">
+        <a class="page-link" href="?page=1" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li class="page-item">
+        <a class="page-link" href="?page={{ questions.previous_page_number }}">
+            {{ questions.previous_page_number }}
+        </a>
+    </li>
+    {% endif %}
+
+    <li class="page-item">
+        <a class="page-link" href="">
+            {{ questions.number }}
+        </a>
+    </li>
+    
+    {% if questions.has_next %}
+    <li class="page-item">
+        <a class="page-link" href="?page={{ questions.next_page_number }}">
+            {{ questions.next_page_number }}
+        </a>
+    </li>
+        <li class="page-item">
+        <a class="page-link" href="?page={{ questions.paginator.num_pages }}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+    {% endif %}
+
+  </ul>
+</nav> 
