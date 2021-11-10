@@ -1,0 +1,77 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>  
+
+    <!-- Bootstrap core CSS -->
+<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{%  static "css/my.css" %}" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+    
+{% include "incl/navbar.html" %}
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            {% block content %}
+            {% endblock content %}
+            <div class="col-3">
+                <h2>Populat tags</h2>
+                <big><a class="color-red" href="#">Kino</a></big> 
+                <small><a class="color-green" href="#">Zvezda po imeni solnce</a></small> 
+                <a class="color-blueviolet" href="#"></a>
+                <br>
+                <a class="color-blueviolet" href="#">Tsoi</a> 
+                <big><a class="color-red" href="#">rok</a></big> 
+                <a class="color-green" href="#">russian rock</a>
+                <br>
+                <small><a class="color-green" href="#">postpunk</a></small> 
+                <a class="color-blueviolet" href="#">new wave</a> 
+                <big><a class="color-red" href="#">Poslednii geroi</a></big>
+                <br><br>
+                <h2>Best members</h2>
+                <a href="#">Victor Tsoi</a><br>
+                <a href="#">Aleksey Ribin</a><br>
+                <a href="#">Oleg Valinskyi</a><br>
+                <a href="#">Aleksandr Titov</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

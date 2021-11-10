@@ -1,0 +1,36 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-9">
+        <h2>Settings: Victor Tsoi</h2>
+        <div class="row">
+            <div class="col-2"><h5>Login</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"><h5>Email</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"><h5>Nickname</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"><h5>Upload avatar</h5></div>
+            <div class="col-10"><img id="img-settings" src="{% static "img/oblozka.jpg" %}" alt=""></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10">
+                <input type="file" name="f" accept=".jpg, .jpeg, .png">
+                <input type="submit" value="send">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5></h5></div>
+            <div class="col-10"><button id="save-button" class="button">Save</button></div>
+        </div>
+    </div>
+{% endblock content %}

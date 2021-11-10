@@ -1,0 +1,15 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="col-9">
+    <h2 class="questions-header">Questions</h2>
+    {% for question in questions %}
+        {% include "incl/single_question.html" %}
+    {% endfor %}
+    <div class="center">
+        {% include "incl/pagination.html" %}
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,46 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-9">
+        <h2>Registration</h2>
+        <h6 class="color-red">Sorry, this email adress already registered!</h6><br>
+        <div class="row">
+            <div class="col-2"><h5>Login</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5>Email</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5>Nickname</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5>Password</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h6>Repeat password</h6></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5>Upload avatar</h5></div>
+            <div class="col-10">
+                <input type="file" name="f" accept=".jpg, .jpeg, .png">
+                <input type="submit" value="send">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10"><button id="register-button" class="button">Register!</button></div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-9">
+        <h2>New question</h2>
+        <div class="row">
+            <div class="col-2"><h5>Tittle</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"><h5>Text</h5></div>
+            <div class="col-10"><textarea name="question"></textarea></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"><h5>Tags</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div><br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10"><button id="ask-button" class="button">ask</button></div>
+        </div>
+    </div>
+{% endblock content %}
+ 

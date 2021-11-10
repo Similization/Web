@@ -1,0 +1,28 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-9">
+        <h2>Log in</h2>
+        <h6 class="color-red">Sorry, wrong password!</h6><br>
+        <div class="row">
+            <div class="col-2"><h5>Login</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5>Password</h5></div>
+            <div class="col-10"><input type="text"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5></h5></div>
+            <div class="col-10"><button id="login-button" class="button">Log in!</button></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"><h5></h5></div>
+            <div class="col-10"><a href="{% url "signup" %}">Create new account</a></div>
+        </div>
+    </div>
+{% endblock content %}
